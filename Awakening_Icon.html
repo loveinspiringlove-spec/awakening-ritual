@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{
+  width:100vw;height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,#e8940a 0%,#d9920e 22%,#cfa030 45%,#c9a040 68%,#D4A853 100%);
+  overflow:hidden;
+}
+.icon{
+  width:min(100vw,100vh);
+  height:min(100vw,100vh);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.icon svg{
+  width:72%;height:72%;
+}
+</style>
+</head>
+<body>
+<div class="icon">
+  <svg viewBox="0 0 340 340">
+    <defs>
+      <filter id="glow"><feGaussianBlur stdDeviation="1" result="cb"/><feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <!-- Purple Seed of Life -->
+    <g transform="translate(170,170)" stroke="#3D0D5E" fill="none" filter="url(#glow)" opacity="0.9">
+      <circle cx="0" cy="0" r="84" stroke-width="2.4"/>
+      <circle cx="84" cy="0" r="84" stroke-width="2.4"/>
+      <circle cx="-84" cy="0" r="84" stroke-width="2.4"/>
+      <circle cx="42" cy="72.7" r="84" stroke-width="2.4"/>
+      <circle cx="-42" cy="72.7" r="84" stroke-width="2.4"/>
+      <circle cx="42" cy="-72.7" r="84" stroke-width="2.4"/>
+      <circle cx="-42" cy="-72.7" r="84" stroke-width="2.4"/>
+    </g>
+    <!-- Star at center -->
+    <text x="170" y="170" text-anchor="middle" dominant-baseline="central" font-size="58" fill="#3D0D5E" style="font-family:Georgia,serif;">&#10022;</text>
+  </svg>
+</div>
+</body>
+</html>
